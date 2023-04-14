@@ -11,15 +11,21 @@
 }
 
 /* HEADER */
+
 .porfolio_header {
   /* background-color: rgb(51, 51, 51); */
   background-color: rgb(29, 29, 29);
-
   width: 100%;
   height: 5rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   gap: 1rem;
+}
+
+.header-anchor:visited,
+.header-anchor:link {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .header_name_container {
@@ -31,9 +37,13 @@
 }
 .header_name {
   /* text-align: center; */
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  /* outline: 5px solid blueviolet; */
+  /* text-align: center; */
+  border-radius: 20px;
   padding: 2px;
   color: white;
+  /* color: blueviolet; */
   font-size: 3rem;
 }
 .header_items_list {
@@ -53,11 +63,29 @@
   font-size: 1.5rem;
 }
 .header_item:hover {
-  background-color: rgb(29, 165, 219);
+  background: rgba(121, 121, 121, 0.185);
+  cursor: pointer;
 }
 
 .social-links-container {
-  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+  list-style-type: none;
+  margin-right: 2rem;
+}
+.social-link {
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.social-link:hover {
+  cursor: pointer;
+  background: rgba(121, 121, 121, 0.185);
 }
 
 /* ALL SECTIONS */
@@ -147,17 +175,7 @@
 .project-component-header {
   display: grid;
 }
-.project-component-header > * {
-  grid-area: 1/2;
-}
-.project-component-header-name {
-  align-self: end;
-  height: 40px;
-  padding: 20px;
-  font-size: 2rem;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-}
+
 .project-component-image {
   width: 22rem;
   height: 15rem;

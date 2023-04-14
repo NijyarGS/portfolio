@@ -10,13 +10,29 @@ export default function Header() {
         <li className="header_item">Skills</li>
         <li className="header_item">Conatact me</li>
       </ul>
-      <div className="social-links-container">
-        <ul>
-          <li>Email</li>
-          <li>LikedIn</li>
-          <li>Github</li>
-        </ul>
-      </div>
+
+      <ul className="social-links-container">
+        <li className="social-link">
+          <a
+            className="header-anchor"
+            href="https://www.linkedin.com/in/nijyar-saeed/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li className="social-link">
+          <a
+            className="header-anchor"
+            href="https://github.com/NijyarGS"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </header>
   );
 }
