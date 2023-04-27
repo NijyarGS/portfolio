@@ -4,18 +4,17 @@ import arrowLeft from "../images/arrowLeft.svg";
 import arrowRight from "../images/arrowRight.svg";
 
 export default function ProjectsLogic({ items }) {
-  console.log(items.length);
-  let [current, setCurrent] = useState(0);
-  let second = current + 1;
-  // let last = current + 2;
-  let previous = current - 1;
+  let [itemPos, setItemPost] = useState(0);
+  let numb = 42;
+  console.log(itemPos);
 
   function handleArrowClick(direction) {
     if (direction) {
-      if (second < items.length - 1) setCurrent(current + 1);
+      if (itemPos > -42 * (items.length - 2)) setItemPost(itemPos - numb);
     } else {
-      if (current > 0) setCurrent(current - 1);
+      if (itemPos < 0) setItemPost(itemPos + numb);
     }
+    console.log(itemPos);
   }
 
   return (
@@ -28,17 +27,8 @@ export default function ProjectsLogic({ items }) {
       </button>
 
       <div className="projects-container">
-        {items.map((item, index) => {
-          if (index === current || index === second)
-            return <ProjectComponent name={item.name} />;
-          else if (index <= previous)
-            return (
-              <ProjectComponent name={item.name} itemClasses={"previousItem"} />
-            );
-          else if (index > second)
-            return (
-              <ProjectComponent name={item.name} itemClasses={"nextItem"} />
-            );
+        {items.map((item) => {
+          return <ProjectComponent name={item.name} itemPos={itemPos} />;
         })}
       </div>
 

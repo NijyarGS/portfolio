@@ -2,13 +2,16 @@ export default function ProjectComponent({
   name,
   image,
   description,
-  itemClasses,
+  itemPos,
 }) {
   // Add technologies
   // make it sideways
 
   return (
-    <div className={"project-component-container " + itemClasses}>
+    <div
+      className={"project-component-container "}
+      style={{ transform: `translateX(${itemPos}rem)` }}
+    >
       <div className="project-component-header">
         <img
           className="project-component-image"
