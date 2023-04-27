@@ -20,34 +20,34 @@ export default function ProjectsLogic({ items }) {
 
   return (
     <div className="projects-carousel-container">
-      <button
+      {/*<button
         className="projects-carousel-button"
         onClick={() => handleArrowClick(false)}
       >
         <i className="fa-solid fa-angles-left"></i>
-      </button>
+      </button>*/}
 
       <div className="projects-container">
         {items.map((item, index) => {
-          if (index === current || index === second)
-            return <ProjectComponent name={item.name} />;
-          else if (index <= previous)
-            return (
-              <ProjectComponent name={item.name} itemClasses={"previousItem"} />
-            );
-          else if (index > second)
-            return (
-              <ProjectComponent name={item.name} itemClasses={"nextItem"} />
-            );
+          // if (index === current || index === second)
+          return <ProjectComponent name={item.name} />;
+          // else if (index <= previous)
+          //   return (
+          //     <ProjectComponent name={item.name} itemClasses={"previousItem"} />
+          //   );
+          // else if (index > second)
+          //   return (
+          //     <ProjectComponent name={item.name} itemClasses={"nextItem"} />
+          //   );
         })}
       </div>
 
-      <button
+      {/* <button
         className="projects-carousel-button"
         onClick={() => handleArrowClick(true)}
       >
         <i className="fa-solid fa-angles-right"></i>
-      </button>
+      </button>*/}
     </div>
   );
 }
