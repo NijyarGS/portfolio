@@ -8,7 +8,7 @@ export default function AboutMe() {
 
         <p className="about-me-greetings-text">
           I am a <span className="front-end-dev">Front-end web developer</span>{" "}
-          from Duhok Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          from Duhok
         </p>
       </div>
       <div className="about-me-placeholder">

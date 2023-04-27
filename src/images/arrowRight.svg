@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="228.421" height="212.132" viewBox="0 0 228.421 212.132">
+  <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(87 35.355) rotate(-45)" stroke="rgba(112,112,112,0)" stroke-width="1">
+    <rect width="50" height="150" rx="25" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="149" rx="24.5" fill="none"/>
+  </g>
+  <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(193.066 70.711) rotate(45)" stroke="rgba(112,112,112,0)" stroke-width="1">
+    <rect width="50" height="150" rx="25" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="149" rx="24.5" fill="none"/>
+  </g>
+  <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(0 35.355) rotate(-45)" stroke="rgba(112,112,112,0)" stroke-width="1">
+    <rect width="50" height="150" rx="25" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="149" rx="24.5" fill="none"/>
+  </g>
+  <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(106.066 70.711) rotate(45)" stroke="rgba(112,112,112,0)" stroke-width="1">
+    <rect width="50" height="150" rx="25" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="149" rx="24.5" fill="none"/>
+  </g>
+</svg>

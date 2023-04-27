@@ -12,24 +12,24 @@ export default function Header() {
       </ul>
 
       <ul className="social-links-container">
-        <li className="social-link">
+        <li>
           <a
-            className="header-anchor"
+            className="header-anchor social-link"
             href="https://www.linkedin.com/in/nijyar-saeed/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
-        <li className="social-link">
+        <li>
           <a
-            className="header-anchor"
+            className="header-anchor social-link"
             href="https://github.com/NijyarGS"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
         </li>
       </ul>

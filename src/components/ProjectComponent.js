@@ -1,6 +1,14 @@
-export default function ProjectComponent() {
+export default function ProjectComponent({
+  name,
+  image,
+  description,
+  itemClasses,
+}) {
+  // Add technologies
+  // make it sideways
+
   return (
-    <div className="project-component-container">
+    <div className={"project-component-container " + itemClasses}>
       <div className="project-component-header">
         <img
           className="project-component-image"
@@ -10,12 +18,8 @@ export default function ProjectComponent() {
       </div>
       <div className="project-component-main">
         <div className="project-component-desciption-conatiner">
-          <h3 className="project-component-name">THING</h3>
-          <p className="project-component-desciption">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam rerum
-            debitis quisquam culpa, nihil dignissimos dolorem at consequuntur.
-            Porro, minus ?
-          </p>
+          <h3 className="project-component-name">{name}</h3>
+          <p className="project-component-desciption">{description}</p>
         </div>
         <div className="porject-component-links-container">
           <a

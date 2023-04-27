@@ -10,6 +10,7 @@ Name Tooltip (Maybe)
  hover glow effect on Front end
  Contact me projects card
  responsive design
+ button that git bigger when you hover over
  */
 function App() {
   return (
