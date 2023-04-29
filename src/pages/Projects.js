@@ -7,37 +7,49 @@ export default function Projects() {
       name: "i am first",
       image:
         "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      desciption:
+      description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, necessitatibus reprehenderit. Unde porro quidem",
-      Porjecturl: "",
-      SiteURL: "",
+      urls: [
+        { name: "Github", link: "" },
+        { name: "Live Website", link: "" },
+      ],
+      technologies: ["html", "csss", "react"],
     },
     {
       name: "i am second",
       image:
         "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      desciption:
+      description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, necessitatibus reprehenderit. Unde porro quidem",
-      Porjecturl: "",
-      SiteURL: "",
+      urls: [
+        { name: "Github", link: "" },
+        { name: "Live Website", link: "" },
+      ],
+      technologies: ["html", "csss", "react"],
     },
     {
       name: "i am third",
       image:
         "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      desciption:
+      description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, necessitatibus reprehenderit. Unde porro quidem",
-      Porjecturl: "",
-      SiteURL: "",
+      urls: [
+        { name: "Github", link: "" },
+        { name: "Live Website", link: "" },
+      ],
+      technologies: ["html", "csss", "react"],
     },
     {
       name: "Be the Next",
       image:
         "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      desciption:
+      description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, necessitatibus reprehenderit. Unde porro quidem",
-      Porjecturl: "",
-      SiteURL: "",
+      urls: [
+        { name: "Github", link: "" },
+        { name: "Live Website", link: "" },
+      ],
+      technologies: ["html", "csss", "react"],
     },
   ];
 

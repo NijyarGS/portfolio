@@ -30,7 +30,15 @@ export default function ProjectsLogic({ items }) {
       <div className="projects-container">
         {items.map((item, index) => {
           // if (index === current || index === second)
-          return <ProjectComponent name={item.name} />;
+          return (
+            <ProjectComponent
+              name={item.name}
+              image={item.image}
+              description={item.description}
+              urls={item.urls}
+              technologies={item.technologies}
+            />
+          );
           // else if (index <= previous)
           //   return (
           //     <ProjectComponent name={item.name} itemClasses={"previousItem"} />
