@@ -6,13 +6,17 @@ export default function AboutMe() {
           Hi, My Name is <span className="about-me-my-name">Nizhyar</span>
         </p>
 
-        <p className="about-me-greetings-text">
-          I am a <span className="front-end-dev">Front-end web developer</span>{" "}
-          from Duhok
-        </p>
+        <span className="front-end-dev-out">
+          <span className="front-end-dev">Front-end web developer</span>
+        </span>
       </div>
-      <div className="about-me-placeholder">
-        Short Story or Image or maybe both idk also not yellow lol
+      <div className="about-me-text">
+        <p className="about-me-greetings-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+          labore repellendus rerum ducimus, officia delectus dolore temporibus
+          illo vitae quas molestias perspiciatis veniam repellat eligendi
+          tempore. Voluptate placeat magnam rerum.
+        </p>
       </div>
     </div>
   );
