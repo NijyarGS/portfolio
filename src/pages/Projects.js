@@ -1,4 +1,4 @@
-import ProjectComponent from "../components/ProjectComponent";
+// import ProjectComponent from "../components/ProjectComponent";
 import ProjectsLogic from "../logic/ProjectsCarouselLogic";
 
 export default function Projects() {
