@@ -5,10 +5,18 @@ export default function Header() {
         <h1 className="header_name">Nizhyar Saeed</h1>
       </div>
       <ul className="header_items_list">
-        <li className="header_item">About me</li>
-        <li className="header_item">Projects</li>
-        <li className="header_item">Skills</li>
-        <li className="header_item">Conatact me</li>
+        <a href="#aboutme" className="header-anchor header_item">
+          About me
+        </a>
+        <a href="#skills" className="header-anchor header_item">
+          Skills
+        </a>
+        <a href="#projects" className="header-anchor header_item">
+          Projects
+        </a>
+        <a href="#contactme" className="header-anchor header_item">
+          Conatact me
+        </a>
       </ul>
 
       <ul className="social-links-container">

@@ -18,11 +18,13 @@ export default function ProjectComponent({
         <div className="project-component-desciption-conatiner">
           <p className="project-component-desciption">{description}</p>
         </div>
-        <div className="technologies-container">
-          <p className=""> Technologies : </p>
-          {technologies.map((item) => {
-            return <span>{item} </span>;
-          })}
+        <div className="technologies-top-container">
+          <p className="technologies-head"> Technologies</p>
+          <div className="technologies-container">
+            {technologies.map((item) => {
+              return <span className="technologies-type">{item} </span>;
+            })}
+          </div>
         </div>
 
         <div className="porject-component-links-container">

@@ -40,7 +40,7 @@ let Myskills = [
 ];
 export default function Skills() {
   return (
-    <div className="skills-section-container">
+    <div id="skills" className="skills-section-container">
       <h2 className="section-name">SKILLS</h2>
       <div className="skills-container">
         {Myskills.map((item) => {

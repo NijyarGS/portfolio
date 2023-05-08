@@ -15,7 +15,7 @@
 .porfolio_header {
   /* background-color: rgb(51, 51, 51); */
   background-color: rgb(29, 29, 29);
-  width: 100%;
+
   height: 5rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
@@ -201,7 +201,7 @@
 .projects-container {
   padding: 5rem 0rem;
   display: grid;
-  gap: 5rem 20rem;
+  gap: 5rem 4rem;
   position: relative;
   grid-template-columns: 1fr 1fr;
   /* overflow-x: scroll; */
@@ -255,40 +255,46 @@
   display: flex;
   /* grid-template-rows: 1fr 1fr; */
   /* border-radius: 1rem; */
-  /* overflow: hidden; */
+  overflow: hidden;
+  border-radius: 1rem;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
   transition: all 1s;
 }
 
 .project-component-header {
+  background-color: rgb(233, 233, 233);
+  padding: 2rem;
 }
 
 .project-component-image {
-  width: 15rem;
+  width: 12rem;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .project-component-main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .porject-component-links-container {
   display: flex;
-  gap: 1px;
+  flex-direction: row-reverse;
+  gap: 2px;
   /* background-color: rgb(17, 70, 121); */
 }
 .porject-component-link {
   /* background-color: rgb(58, 121, 180); */
   background-color: rgb(30, 121, 206);
-
+  border-radius: 0.3rem;
   text-align: center;
   padding: 0.5rem 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   transition: 0.5s;
+  /* color: white; */
 }
 .porject-component-link:link,
 .porject-component-link:visited {
@@ -299,11 +305,9 @@
 
 .porject-component-link:hover {
   background-color: rgb(49, 112, 170);
-  box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.589);
 }
 
 .project-component-desciption-conatiner {
-  padding: 5px 25px;
 }
 
 .project-component-desciption {
@@ -315,6 +319,27 @@
   font-weight: bold;
   padding: 10px 0px;
 }
+.technologies-top-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+}
+.technologies-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.technologies-head {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.technologies-type {
+  background-color: rgb(199, 199, 199);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 0.9rem;
+}
 
 /* SKILLS SECTION */
 
@@ -323,6 +348,7 @@
   padding: 4rem 2rem;
 }
 .skills-container {
+  padding: 5rem 0rem;
   width: 40rem;
   display: grid;
   margin: 0px auto;
@@ -355,6 +381,19 @@
 
 /* MEDIA QUARIES */
 
+@media screen and (max-width: 1440px) {
+  .section-name {
+    text-align: center;
+  }
+
+  .projects-container {
+    /* background-color: red; */
+    gap: 2rem;
+    padding: 5rem 0rem;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .porfolio_header {
     grid-template-columns: 1fr 1fr;
@@ -377,12 +416,72 @@
   .projects-container {
     /* background-color: red; */
     gap: 1rem;
-    padding: 5rem 5rem;
+    padding: 5rem 0rem;
     /* flex-direction: column; */
   }
+}
 
-  /* .project-component-container {
-    width: 11rem;
-    height: 15rem;
-  } */
+@media screen and (max-width: 720px) {
+  .header_name {
+    font-size: 2rem;
+  }
+  .social-links-container {
+    gap: 0;
+  }
+  .about-me-greetings-container {
+    padding: 5rem 0rem;
+    margin: 0rem 1rem;
+  }
+  .about-me-greetings-text-head {
+    font-size: 4rem;
+  }
+
+  .front-end-dev {
+    font-size: 1.1rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem 2rem;
+    width: 18rem;
+  }
+
+  .project-component-container {
+    width: 16rem;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+  .project-component-header {
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .project-component-main {
+    gap: 0.5rem;
+  }
+  .project-component-name {
+    text-align: center;
+  }
+  .porject-component-links-container {
+    justify-content: space-between;
+  }
+
+  .technologies-top-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .technologies-container {
+    display: flex;
+    justify-content: center;
+  }
+  .technologies-head {
+    text-align: center;
+  }
 }
